@@ -22,13 +22,13 @@
             var input = document.getElementById("id").value; // получаем значение поля ввода
             return input;
         }
+    <?php
+        $id = "<script>document.write(checkInput());</script>";
+    ?>
     </script>
 
-    <form>
-
-         <p>Твой id: <script>document.write(checkInput());</script></p>
-
-    <form>
+    <?php echo $id;
+    ?>
 
 
 </body>
