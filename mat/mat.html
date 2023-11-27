@@ -1,0 +1,35 @@
+<html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+    <title>ЕГЭ</title>
+</head>
+<body>
+    <div id="main">
+        <h1>Математика профильный</h1>
+        <br>
+    </div>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script> 
+        let tg = window.Telegram.WebApp;
+        tg.expand();
+
+        function end() {
+            window.location.href = "../index.html";
+        }
+        
+        function number1() {
+            window.location.href = "1.html";
+        }
+
+        function number2() {
+            window.location.href = "2.html";
+        }
+
+    </script>
+    <button class="button" onclick="end()">Назад</button><br><br>
+    <button onclick="number1()">№1</button><br><br>
+    <button onclick="number2()">№2</button><br><br>
+</body>
+</html>
