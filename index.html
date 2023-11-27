@@ -1,0 +1,47 @@
+<html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>ЕГЭ</title>
+</head>
+<body>
+    <div id="main">
+        <h1>Предметы</h1>
+        <br>
+    </div>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script> 
+        let tg = window.Telegram.WebApp;
+        tg.expand();
+
+        function ru() {
+            window.location.href = "ru.html";
+        }
+
+        function mat() {
+            window.location.href = "mat/mat.html";
+        }
+
+        function inf() {
+            window.location.href = "inf.html";
+        }
+
+        function fizik() {
+            window.location.href = "fizik.html";
+        }
+    </script>
+    <button onclick="ru()">Русский язык</button>
+    <br>
+    <br>
+    <button onclick="mat()">Математика профильный</button>
+    <br>
+    <br>
+    <button onclick="inf()">Информатика</button>
+    <br>
+    <br>
+    <button onclick="fizik()">Физика</button>
+    <br>
+    <br>
+</body>
+</html>
