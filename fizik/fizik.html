@@ -1,0 +1,29 @@
+<html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>ЕГЭ Физика</title>
+</head>
+<body>
+    <div id="main">
+        <h1>Физика</h1>
+        <br>
+    </div>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script> 
+        let tg = window.Telegram.WebApp;
+        tg.expand();
+
+        function end() {
+            window.location.href = "../index.html";
+        }
+        
+        function mechanics() {
+            window.location.href = "1.html";
+        }
+    </script>
+    <button onclick="end()">Назад</button><br><br>
+    <button onclick="mechanics()">Механика</button><br><br>
+</body>
+</html>
